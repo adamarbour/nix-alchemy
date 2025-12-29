@@ -1,0 +1,160 @@
+{
+  "pins": {
+    "cachyos-kernel": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "xddxdd",
+        "repo": "nix-cachyos-kernel"
+      },
+      "branch": "release",
+      "submodules": false,
+      "revision": "bb5690a8644c835b845e16ff35ca79eff3213e58",
+      "url": "https://github.com/xddxdd/nix-cachyos-kernel/archive/bb5690a8644c835b845e16ff35ca79eff3213e58.tar.gz",
+      "hash": "0f0hxwa96lnip88kapgk4xfrq9kkydzmymqy3cjxv0i8hwhisv08"
+    },
+    "colmena": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "zhaofengli",
+        "repo": "colmena"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v0.4.0",
+      "revision": "f8a595d8e747e34d0b0c768f08cb6e263963c615",
+      "url": "https://api.github.com/repos/zhaofengli/colmena/tarball/v0.4.0",
+      "hash": "010hpq6sa17b9d3ygiq0m6q8qq63891d906shqhpp0iq4swxymnk"
+    },
+    "disko": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-community",
+        "repo": "disko"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v1.12.0",
+      "revision": "7121f74b976481bc36877abaf52adab2a178fcbe",
+      "url": "https://api.github.com/repos/nix-community/disko/tarball/v1.12.0",
+      "hash": "0wbx518d2x54yn4xh98cgm65wvj0gpy6nia6ra7ns4j63hx14fkq"
+    },
+    "flake-compat": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nixos",
+        "repo": "flake-compat"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "f275e157c50c3a9a682b4c9b4aa4db7a4cd3b5f2",
+      "url": "https://github.com/nixos/flake-compat/archive/f275e157c50c3a9a682b4c9b4aa4db7a4cd3b5f2.tar.gz",
+      "hash": "1pn3q26c8i6p7ry1w9qf091h5zhmdms04ld9bbq73gba6gznppa0"
+    },
+    "home-manager": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-community",
+        "repo": "home-manager"
+      },
+      "branch": "release-25.11",
+      "submodules": false,
+      "revision": "0999ed8f965bbbd991437ad9c5ed3434cecbc30e",
+      "url": "https://github.com/nix-community/home-manager/archive/0999ed8f965bbbd991437ad9c5ed3434cecbc30e.tar.gz",
+      "hash": "1rzgy9qmrvh9l3jrcjv14kva8sj3imzrpm2vmwcfzp40bk9wdfb5"
+    },
+    "lanzaboote": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-community",
+        "repo": "lanzaboote"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v1.0.0",
+      "revision": "2fe211d9c0e2320ce23dc995a3f93666ca149d9a",
+      "url": "https://api.github.com/repos/nix-community/lanzaboote/tarball/v1.0.0",
+      "hash": "17srvx92f0xymayfislm5d87bjd6n1p80s350my8si737iaa16a4"
+    },
+    "mangowc": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "DreamMaoMao",
+        "repo": "mangowc"
+      },
+      "pre_releases": false,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "0.10.8",
+      "revision": "ff35c7afe92e77017fdcf3396ea51aa5f29b7a84",
+      "url": "https://api.github.com/repos/DreamMaoMao/mangowc/tarball/0.10.8",
+      "hash": "08rvngicz7nqfzq4p4bl20ssm62p7frkycm9pkpqi9klkbhygk2n"
+    },
+    "nixpkgs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nixos",
+        "repo": "nixpkgs"
+      },
+      "branch": "nixos-25.11",
+      "submodules": false,
+      "revision": "f560ccec6b1116b22e6ed15f4c510997d99d5852",
+      "url": "https://github.com/nixos/nixpkgs/archive/f560ccec6b1116b22e6ed15f4c510997d99d5852.tar.gz",
+      "hash": "095xlfqagr52sbzsmhc78v7sib1y6v2x833xaqi6hxp84ajaf104"
+    },
+    "nixpkgs-unstable": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nixos",
+        "repo": "nixpkgs"
+      },
+      "branch": "nixos-unstable",
+      "submodules": false,
+      "revision": "3e2499d5539c16d0d173ba53552a4ff8547f4539",
+      "url": "https://github.com/nixos/nixpkgs/archive/3e2499d5539c16d0d173ba53552a4ff8547f4539.tar.gz",
+      "hash": "1x9xnf6wpmxh6xvi2nv59gn950pll298bplzlj9qmj70wp8n8j20"
+    },
+    "secrets": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "adamarbour",
+        "repo": "super-duper-secrets"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "8a3b1331dd0dc59ccf79ce24493b53d4da340db6",
+      "url": "https://github.com/adamarbour/super-duper-secrets/archive/8a3b1331dd0dc59ccf79ce24493b53d4da340db6.tar.gz",
+      "hash": "1kvbgw1inni475q2y1by9gmlrz0is20va12hf6jqgmip52z1xwq3"
+    },
+    "sops-nix": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "mic92",
+        "repo": "sops-nix"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "9836912e37aef546029e48c8749834735a6b9dad",
+      "url": "https://github.com/mic92/sops-nix/archive/9836912e37aef546029e48c8749834735a6b9dad.tar.gz",
+      "hash": "1sk77hv4x1dg7b1c7vpi5npa7smgz726l0rzywlzw80hwk085qh4"
+    }
+  },
+  "version": 5
+}

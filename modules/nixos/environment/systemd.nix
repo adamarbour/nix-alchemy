@@ -1,0 +1,32 @@
+{ lib, pkgs, config, ...}:
+let
+  inherit (lib) mkIf genAttrs;
+  inherit (config.alchemy) system;
+in {
+  config = mkIf (system.isGraphical) {
+    systemd = {
+      settings.Manager = {
+        DefaultTimeoutStartSec = "15s";
+        DefaultTimeoutStopSec = "15s";
+        DefaultTimeoutAbortSec = "15s";
+        DefaultDeviceTimeoutSec = "15s";
+      };
+
+      user.extraConfig = ''
+        DefaultTimeoutStartSec=15s
+        DefaultTimeoutStopSec=15s
+        DefaultTimeoutAbortSec=15s
+        DefaultDeviceTimeoutSec=15s
+      '';
+      
+      services = genAttrs [
+        "getty@tty1"
+        "autovt@tty1"
+        "getty@tty7"
+        "autovt@tty7"
+        "kmsconvt@tty1"
+        "kmsconvt@tty7"
+      ] (_: { enable = false; });
+    };
+  };
+}

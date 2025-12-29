@@ -1,0 +1,66 @@
+{ lib, config, ...}:
+let
+  inherit (lib) mkIf;
+  cfg = config.alchemy.system.disk;
+in {
+  config = mkIf (cfg.enable && cfg.rootFs == "ext4") {
+    # PRIMARY disk
+    disko.devices.disk.disk0 = let
+      rootfsContent = {
+        type = "filesystem";
+        format = "ext4";
+        mountpoint = "/";
+        mountOptions = [ "noatime" ];
+      };
+    in {
+      type = "disk";
+      device = cfg.device;
+      content = {
+        type = "gpt";
+        partitions = {
+          boot = {
+            size = "1M";
+            type = "EF02"; # for grub MBR
+            priority = 100;
+          };
+          esp = {
+            name = "ESP";
+            size = "512M";
+            type = "EF00";
+            priority = 1000;
+            content = {
+              type = "filesystem";
+              format = "vfat";
+              mountpoint = "/boot";
+              mountOptions = [ "umask=0077" ];
+            };
+          };
+          rootfs = {
+            end = if cfg.swap.enable
+              then "-${cfg.swap.size}"
+              else "-0";
+            priority = 2000;
+            content = if cfg.encrypt then {
+              type = "luks";
+              name = "enc";
+              settings = {
+                allowDiscards = true;
+                bypassWorkqueues = true;
+              };
+              content = rootfsContent;
+            } else rootfsContent;
+          };
+          swap = mkIf cfg.swap.enable {
+            size = "100%";
+            priority = 3000;
+            content = {
+              type = "swap";
+              randomEncryption = cfg.encrypt;
+              resumeDevice = cfg.swap.resume;
+            };
+          };
+        };
+      };
+    };
+  };
+}
