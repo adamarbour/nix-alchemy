@@ -27,6 +27,20 @@ in {
   };
   
   ### SYSTEM DEFINITIONS
+  nesta = {
+    imports = [
+      ./systems/nesta/configuration.nix
+      ./systems/nesta/disk.nix
+    ];
+    config = {
+      time.timeZone = "America/Chicago";
+      deployment = {
+        allowLocalDeployment = true;
+        targetHost = null;
+      };
+    };
+  };
+  
   morrigan = {
     imports = [
       ./systems/morrigan/configuration.nix

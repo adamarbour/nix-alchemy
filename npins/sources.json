@@ -138,9 +138,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "8a3b1331dd0dc59ccf79ce24493b53d4da340db6",
-      "url": "https://github.com/adamarbour/super-duper-secrets/archive/8a3b1331dd0dc59ccf79ce24493b53d4da340db6.tar.gz",
-      "hash": "1kvbgw1inni475q2y1by9gmlrz0is20va12hf6jqgmip52z1xwq3"
+      "revision": "f654ebb3c1d20d8808baadf4711ffeacb82e9580",
+      "url": "https://github.com/adamarbour/super-duper-secrets/archive/f654ebb3c1d20d8808baadf4711ffeacb82e9580.tar.gz",
+      "hash": "13wi8342wljfwjy1djphl6p1l29h77wmb5080jkai7bpp137qqad"
     },
     "sops-nix": {
       "type": "Git",
