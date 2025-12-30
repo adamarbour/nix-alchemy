@@ -27,10 +27,10 @@ in {
   };
   
   ### SYSTEM DEFINITIONS
-  nesta = {
+  feyre = {
     imports = [
-      ./systems/nesta/configuration.nix
-      ./systems/nesta/disk.nix
+      ./systems/feyre/configuration.nix
+      ./systems/feyre/disk.nix
     ];
     config = {
       time.timeZone = "America/Chicago";
@@ -40,12 +40,10 @@ in {
       };
     };
   };
-  
-  morrigan = {
+  nesta = {
     imports = [
-      ./systems/morrigan/configuration.nix
-      ./systems/morrigan/hardware.nix
-      ./systems/morrigan/disk.nix
+      ./systems/nesta/configuration.nix
+      ./systems/nesta/disk.nix
     ];
     config = {
       time.timeZone = "America/Chicago";
