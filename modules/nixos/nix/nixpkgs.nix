@@ -6,6 +6,7 @@ in {
     hostPlatform = mkDefault "x86_64-linux";
     overlays = [
       (import ../../../overlays/unstable.nix)
+      (import ../../../overlays/nix-cachyos-kernel.nix)
       (import ../../../overlays/mangowc.nix)
     ];
     config = {
