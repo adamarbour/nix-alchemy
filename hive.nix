@@ -36,7 +36,7 @@ in {
       time.timeZone = "America/Chicago";
       deployment = {
         allowLocalDeployment = true;
-        targetHost = null;
+        targetHost = "100.75.8.103";
       };
     };
   };

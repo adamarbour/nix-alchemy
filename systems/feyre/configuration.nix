@@ -16,8 +16,8 @@
   };
   
   alchemy.boot = {
-    kernel = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto;
-    loader = "systemd";
+    kernel = pkgs.linuxPackages_zen;
+    loader = "lanzaboote";
     silentBoot = true;
   };
   
