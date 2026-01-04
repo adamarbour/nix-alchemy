@@ -19,6 +19,8 @@ in {
         # adds nvidia-settings to pkgs, so useless on nixos
         nvidiaSettings = false;
         nvidiaPersistenced = true;
+        videoAcceleration = true;
+        forceFullCompositionPipeline = false;
       };
       graphics = {
         extraPackages = [ pkgs.nvidia-vaapi-driver ];
